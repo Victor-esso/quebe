@@ -150,7 +150,7 @@ input{
     border: none;
 }
 
-h1>span,h3>span{
+h1>span,h3>span,h2>span{
     color: var(--blue2);
 }
 
@@ -185,7 +185,9 @@ a:hover {
 }
 
 
-
+.swiper-wrapper{
+    width: max-content;
+}
 
 
 
@@ -447,11 +449,11 @@ div.header-search-cont>input::placeholder{
     }
 
     section.has-wave-top{
-        margin-top: -14vw;
+        margin-top: -10vw;
         z-index: 1;
     }
     section.has-wave-bottom{
-        margin-bottom: -14vw;
+        margin-bottom: -10vw;
     }
 
 }
@@ -624,4 +626,156 @@ button.btn-transparent:hover, a.btn-transparent:hover{
 }
 [illustration] img{
     width: 100%;
+}
+
+
+/* Trusted Companies logo */
+img.trusted-companies-img{
+    height: 30px;
+    cursor: pointer;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    transition: .2s ease-in-out;
+    opacity: .5;
+}
+
+img.trusted-companies-img:hover{
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+@media (max-width: 978px){
+    img.trusted-companies-img{
+        height: 20px;
+    }
+}
+
+
+
+@media (min-width: 978px) {
+    [buttom-section-download-section]{
+        height: 500px;
+    }
+    
+    [iphone] img{
+        width: 200px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-70%,-50%);
+        z-index: 10;
+    }
+}
+
+@media (max-width: 978px) {
+    [buttom-section-download-section]{
+        height: 45rem;
+    }
+
+    [buttom-section-download-section]>div{
+        padding-top: 200px !important;
+        padding-left:2rem !important;
+        padding-right:2rem !important;
+    }
+
+    [iphone] img{
+        width: 10rem;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+        bottom: 10px;
+    }
+
+
+}
+
+[download-link-play-apple]{
+    display: block;
+    width: 180px;
+    padding: 5px;
+    background-color: var(--white);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+[download-link-play-apple] img{
+    height: 40px;
+}
+[download-link-play-apple]>p{
+    font-size: 1.2rem;
+    color: var(--dark-grey);
+    margin: unset;
+    font-weight: 600;
+}
+[download-link-play-apple]>p>span{
+    display: block;
+    font-size: .8rem;
+    margin-bottom: -5px;
+    font-weight: 400;
+}
+
+[download-link-play-apple]:active{
+    transform: scale(.9);
+}
+
+[iphone]{
+    position: relative;
+}
+
+
+
+@media (min-width: 997px) and (max-width:1233px) {
+    [download-link-play-apple]{
+        transform: scale(.9);
+    }
+    [download-link-play-apple] img{
+        height:30px;
+    }
+    [download-link-play-apple]>p{
+        font-size: 1rem;
+    }
+    [download-link-play-apple]>p>span{
+        font-size: .7rem;
+    }
+}
+
+@media (max-width: 501px) {
+    [download-link-play-apple]{
+        transform: scale(.9);
+    }
+    [download-link-play-apple] img{
+        height:30px;
+    }
+    [download-link-play-apple]>p{
+        font-size: 1rem;
+    }
+    [download-link-play-apple]>p>span{
+        font-size: .7rem;
+    }
+}
+
+@media (max-width: 376px) {
+    [download-link-play-apple]{
+        transform: scale(.9);
+    }
+    [download-link-play-apple] img{
+        height:25px;
+    }
+    [download-link-play-apple]>p{
+        font-size: .9rem;
+    }
+    [download-link-play-apple]>p>span{
+        font-size: .6rem;
+    }
+}
+
+
+@media (min-width: 313px) {
+    [buttom-section-download-section]{
+        height: 40rem;
+    }
 }

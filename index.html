@@ -14,6 +14,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+    <!-- swiper Js CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
     <!--FlatIcons-->
     <link rel="stylesheet" href="assets/flaticons/bold-rounded/css/uicons-bold-rounded.css"><!--Bold Rounded-->
     <link rel="stylesheet" href="assets/flaticons/bold-straight/css/uicons-bold-straight.css"><!--Bold Straight-->
@@ -36,7 +39,7 @@
         <div class="row">
 
             <!-- Logo & Nav Btn -->
-            <div class=" col-lg-3 pt-1 pb-1 d-flex justify-content-lg-start justify-content-between align-items-center "><div class=""><img src="assets/images/logo/logo.svg" alt="" class="logo"></div> <button class=" d-lg-none btn-transparent radius-5" menu-btn><i class="fi fi-rr-menu-burger"></i></button></div>
+            <div class=" col-lg-3 pt-1 pb-1 d-flex justify-content-lg-start justify-content-between align-items-center "><div class=""> <h1 style="font-weight: 700; color:#00AFEF;" class="">LOGO</h1><img src="assets/images/logo/logo.svg" alt="" class="logo" style="display: none;"></div> <button class=" d-lg-none btn-transparent radius-5" menu-btn><i class="fi fi-rr-menu-burger"></i></button></div>
             
             <!-- Navigation -->
             <div nav-holder class="col-lg-9 col-11 m-lg-0 mt-lg-0 d-lg-flex justify-content-lg-between align-items-center d-none pe-lg-5 pt-lg-0 p-4 p-lg-0 radius-5 bg-white">
@@ -198,7 +201,7 @@
 
     
 
-    <section section class=" position-relative pt-lg-5 mt-lg-5 pt-4 pb-4 pb-lg-0">
+    <section section class=" position-relative pt-lg-5 mt-lg-5 pt-4 pb-4 pb-lg-0" style="z-index: 2;">
         <div main class="col-lg-12">
             <div class=" d-flex justify-content-lg-between flex-lg-row-reverse align-items-lg-center ps-lg-5 flex-lg-row flex-column-reverse col-lg-11 m-lg-auto pb-lg-4">
             
@@ -234,6 +237,66 @@
         </div>
     </section>
 
+
+    <section section class="has-wave-top position-relative">
+        
+        <div class="wave-top"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f0f0f0" fill-opacity="1" d="M0,256L1440,96L1440,320L0,320Z"></path></svg></div>
+        
+        <section main grey class=" container-fluid col-lg-12 pb-4">
+            <h2 grey class=" col-lg-10 m-lg-auto mb-4">Trusted Companies</h2>
+
+
+            <div class="row-swiper col-lg-10 col-12 m-auto overflow-hidden py-lg-5 py-4" swiper-name="companies" swiper-loop slides-auto-play="2000" >
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper align-items-center">
+                    <!-- Slides -->
+                    <div class="swiper-slide width-fit-content me-lg-5 me-4" item ><img class=" trusted-companies-img" src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Coinbase.svg" alt=""></div>
+                    <div class="swiper-slide width-fit-content me-lg-5 me-4" item ><img class=" trusted-companies-img" src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Disney_wordmark.svg" alt=""></div>
+                    <div class="swiper-slide width-fit-content me-lg-5 me-4" item ><img class=" trusted-companies-img" src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Google_org_logo.svg" alt=""></div>
+                    <div class="swiper-slide width-fit-content me-lg-5 me-4" item ><img class=" trusted-companies-img" src="https://upload.wikimedia.org/wikipedia/commons/6/62/Tesla_Motors_Logo.svg" alt=""></div>
+                    <div class="swiper-slide width-fit-content me-lg-5 me-4" item ><img class=" trusted-companies-img" src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" alt=""></div>
+                    <div class="swiper-slide width-fit-content me-lg-5 me-4" item ><img class=" trusted-companies-img" src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Coca-Cola_logo.svg" alt=""></div>
+                    <div class="swiper-slide width-fit-content me-lg-5 me-4" item ><img class=" trusted-companies-img" src="https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg" alt=""></div>
+                    <div class="swiper-slide width-fit-content me-lg-5 me-4" item ><img class=" trusted-companies-img" src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg" alt=""></div>
+                    <div class="swiper-slide width-fit-content me-lg-5 me-4" item ><img class=" trusted-companies-img" src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt=""></div>
+                    <div class="swiper-slide width-fit-content me-lg-5 me-4" item ><img class=" trusted-companies-img" src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Disney_wordmark.svg" alt=""></div>
+                    <div class="swiper-slide width-fit-content me-lg-5 me-4" item ><img class=" trusted-companies-img" src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Coinbase.svg" alt=""></div>
+                    <div class="swiper-slide width-fit-content me-lg-5 me-4" item ><img class=" trusted-companies-img" src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Disney_wordmark.svg" alt=""></div>
+
+
+                    
+
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+    <section class="d-flex justify-content-lg-center align-items-lg-center justify-content-center align-items-end" buttom-section-download-section>
+
+        <div class=" bg-green-light p-lg-4 p-3 col-lg-8 col-md-11 col-10 radius-5 d-flex justify-content-lg-between align-items-lg-center flex-lg-row flex-column-reverse  position-relative">
+            <div class=" col-lg-6">
+                <h2 style="font-weight:600;">Access your <span>Dashboard</span> anywhere, anytime</h2>
+                <p class=" sub-txt font-size-3">mauris in aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod in pellentesque massa placerat duis ultricies lacus sed</p>
+                <div class=" d-flex justify-content-between align-items-center col-lg-11">
+                    <a href="#" download-link-play-apple>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Google_Play_Arrow_logo.svg" alt="">
+                        <p><span>Get it on</span>Google Play</p>
+                    </a>
+
+                    <a href="#" download-link-play-apple>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="">
+                        <p><span>Available on the</span>App Store</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class=" col-lg-4" iphone>
+                <img src="assets/images/images/iphone.png" alt="">
+            </div>
+        </div>
+
+    </section>
 
     
     
@@ -372,8 +435,13 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
+
+    <!-- SwiperJs Javascript -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="assets/js/functions.js"></script>
 
 
 

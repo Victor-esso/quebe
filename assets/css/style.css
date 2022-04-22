@@ -326,6 +326,10 @@ a:hover {
 header .logo{
     width: 160px;
 }
+footer .logo {
+    width: 130px;
+    margin-right: .5rem;
+}
 
 /* // Medium devices (tablets, less than 992px) */
 @media (min-width: 991px) {
@@ -653,9 +657,19 @@ img.trusted-companies-img:hover{
 
 
 
+
+@media (min-width: 313px) {
+    [buttom-section-download-section]{
+        height: 42rem;
+    }
+}
+
+
+
+
 @media (min-width: 978px) {
     [buttom-section-download-section]{
-        height: 500px;
+        height: 34rem;
     }
     
     [iphone] img{
@@ -774,8 +788,82 @@ img.trusted-companies-img:hover{
 }
 
 
-@media (min-width: 313px) {
-    [buttom-section-download-section]{
-        height: 42rem;
-    }
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+footer section:first-child{
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+.socials a{
+    color: var(--white);
+    font-size: 1.3rem;
+    border: 1px solid rgba(255, 255, 255, 0);
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+.bottom-links a{
+    color: var(--white);
+    padding: 5px 10px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    font-size: .7rem;
+    border-radius: 5px;
+}
+.socials a:hover,.bottom-links a:hover{
+    background-color: rgba(255, 255, 255, 0.075);
+    border: 1px solid rgba(255, 255, 255, 0.288);
+    color: var(--white);
+}
+.socials{
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-top h3{
+    font-size: 1.1rem;
+    cursor: default;
+}
+.footer-top li{
+    font-size: .8rem;
+}
+
+.footer-top li a{
+    color: var(--white);
+    opacity: .4;
+    transition: unset;
+}
+
+.footer-top li a:hover{
+    opacity: 1;
+}
+
+.copyrights {
+    font-size: .7rem;
+    cursor: default;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.copyrights span:nth-child(2){
+    font-size: 1.7rem;
+    margin:0px 5px;
+    font-weight: 200;
 }
